@@ -1,1 +1,5 @@
+# Volume dir
 /data
+
+# Environment Vars
+.env

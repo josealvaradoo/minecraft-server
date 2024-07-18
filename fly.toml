@@ -1,0 +1,58 @@
+# fly.toml app configuration file generated for minecraft-server-discord-muga on 2024-07-18T12:37:33-04:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'minecraft-server-discord-muga'
+primary_region = 'mia'
+kill_timeout = '5m0s'
+swap_size_mb = 512
+
+[experimental]
+
+[build]
+  dockerfile = 'Dockerfile'
+
+[env]
+  DIFFICULTY = 'hard'
+  ENABLE_COMMAND_BLOCK = 'false'
+  EULA = 'TRUE'
+  FORCE_GAMEMODE = 'true'
+  MAX_PLAYERS = '10'
+  MODE = 'survival'
+  ONLINE_MODE = 'false'
+  SERVER_NAME = 'Minecraft-Server'
+  SPAWN_PROTECTION = '16'
+  VERSION = '1.21'
+
+[[mounts]]
+  source = 'minecraft'
+  destination = '/data'
+
+[[services]]
+  protocol = 'tcp'
+  internal_port = 25565
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ['app']
+
+  [[services.ports]]
+    port = 25565
+
+  [services.concurrency]
+    type = 'connections'
+    hard_limit = 25
+    soft_limit = 20
+
+[[services]]
+  protocol = 'udp'
+  internal_port = 25565
+
+  [[services.ports]]
+    port = 25565
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1

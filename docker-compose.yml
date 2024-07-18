@@ -1,6 +1,7 @@
 services:
   minecraft:
-    image: itzg/minecraft-server
+    build:
+      context: .
     tty: true
     stdin_open: true
     ports:
@@ -16,3 +17,4 @@ services:
     volumes:
       - ./data:/data
     restart: unless-stopped
+
