@@ -14,7 +14,11 @@ services:
       MAX_PLAYERS: ${MAX_PLAYERS}
       SEED: ${SEED}
       MODE: ${MODE}
+      ENABLE_COMMAND_BLOCK: ${ENABLE_COMMAND_BLOCK}
+      ONLINE_MODE: ${ONLINE_MODE}
+      SPAWN_PROTECTION: ${SPAWN_PROTECTION}
+      FORCE_GAMEMODE: ${FORCE_GAMEMODE}
+      MOTD: ${MOTD}
     volumes:
       - ./data:/data
     restart: unless-stopped
-

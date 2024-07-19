@@ -24,6 +24,7 @@ swap_size_mb = 512
   SERVER_NAME = 'Minecraft-Server'
   SPAWN_PROTECTION = '16'
   VERSION = '1.21'
+  MOTD = '§l§aBienvenido§r al mejor server de Maincra :)'
 
 [[mounts]]
   source = 'minecraft'
@@ -53,6 +54,6 @@ swap_size_mb = 512
     port = 25565
 
 [[vm]]
-  memory = '1gb'
+  size = 'shared-cpu-1x'
+  memory = '2gb'
   cpu_kind = 'shared'
-  cpus = 1
