@@ -8,8 +8,6 @@ primary_region = 'mia'
 kill_timeout = '5m0s'
 swap_size_mb = 512
 
-[experimental]
-
 [build]
   dockerfile = 'Dockerfile'
 
@@ -24,11 +22,13 @@ swap_size_mb = 512
   SERVER_NAME = 'Minecraft-Server'
   SPAWN_PROTECTION = '16'
   VERSION = '1.21'
-  MOTD = '§l§aBienvenido§r al mejor server de Maincra :)'
+  MOTD = 'El mejor server de Maincra :)'
 
 [[mounts]]
   source = 'minecraft'
   destination = '/data'
+  snapshot_retention = 14
+  initial_size = 5
 
 [[services]]
   protocol = 'tcp'

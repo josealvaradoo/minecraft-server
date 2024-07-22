@@ -6,6 +6,7 @@ services:
     stdin_open: true
     ports:
       - "${PORT}:25565"
+      - "24454:24454"
     environment:
       EULA: ${EULA}
       VERSION: ${VERSION}
@@ -21,4 +22,5 @@ services:
       MOTD: ${MOTD}
     volumes:
       - ./data:/data
+      - ./extras:/extras
     restart: unless-stopped
