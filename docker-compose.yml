@@ -23,6 +23,7 @@ services:
       MOTD: ${MOTD}
       TYPE: ${TYPE}
       MODS_FILE: ${MODS_FILE}
+      PLUGINS_FILE: ${PLUGINS_FILE}
       REMOVE_OLD_MODS: ${REMOVE_OLD_MODS}
     volumes:
       - ./data:/data

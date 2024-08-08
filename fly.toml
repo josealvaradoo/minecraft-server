@@ -26,6 +26,7 @@ swap_size_mb = 512
   MOTD = 'El mejor server de Maincra :)'
   TYPE = 'FABRIC'
   MODS_FILE = '/extras/mods.txt'
+  PLUGINS_FILE = '/extras/plugins.txt'
   REMOVE_OLD_MODS = 'TRUE'
 
 [[mounts]]
