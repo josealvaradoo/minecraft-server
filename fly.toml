@@ -15,7 +15,7 @@ swap_size_mb = 512
   DIFFICULTY = 'hard'
   ENABLE_COMMAND_BLOCK = 'false'
   EULA = 'TRUE'
-  MEMORY = 2G
+  MEMORY = '1G'
   FORCE_GAMEMODE = 'true'
   MAX_PLAYERS = '10'
   MODE = 'survival'
@@ -24,9 +24,9 @@ swap_size_mb = 512
   SPAWN_PROTECTION = '16'
   VERSION = '1.21'
   MOTD = 'El mejor server de Maincra :)'
-  TYPE = 'FORGE'
+  TYPE = 'FABRIC'
   MODS_FILE = '/extras/mods.txt'
-  REMOVE_OLD_MODS = TRUE
+  REMOVE_OLD_MODS = 'TRUE'
 
 [[mounts]]
   source = 'minecraft'
@@ -61,3 +61,4 @@ swap_size_mb = 512
   size = 'shared-cpu-2x'
   memory = '2gb'
   cpu_kind = 'shared'
+
