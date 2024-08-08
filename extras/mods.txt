@@ -1,1 +1,5 @@
-https://www.curseforge.com/api/v1/mods/349559/files/5514195/download
+### FABRIC ###
+# Falling Tree
+https://www.curseforge.com/api/v1/mods/349559/files/5599446/download
+# Geysermc
+https://download.geysermc.org/v2/projects/geyser/versions/latest/builds/latest/downloads/fabric
