@@ -10,6 +10,7 @@ services:
     environment:
       EULA: ${EULA}
       VERSION: ${VERSION}
+      MEMORY: ${MEMORY}
       DIFFICULTY: ${DIFFICULTY}
       SERVER_NAME: ${SERVER_NAME}
       MAX_PLAYERS: ${MAX_PLAYERS}
@@ -22,6 +23,7 @@ services:
       MOTD: ${MOTD}
       TYPE: ${TYPE}
       MODS_FILE: ${MODS_FILE}
+      REMOVE_OLD_MODS: ${REMOVE_OLD_MODS}
     volumes:
       - ./data:/data
     restart: unless-stopped
