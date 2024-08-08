@@ -20,7 +20,8 @@ services:
       SPAWN_PROTECTION: ${SPAWN_PROTECTION}
       FORCE_GAMEMODE: ${FORCE_GAMEMODE}
       MOTD: ${MOTD}
+      TYPE: ${TYPE}
+      MODS_FILE: ${MODS_FILE}
     volumes:
       - ./data:/data
-      - ./extras:/extras
     restart: unless-stopped

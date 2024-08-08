@@ -23,6 +23,8 @@ swap_size_mb = 512
   SPAWN_PROTECTION = '16'
   VERSION = '1.21'
   MOTD = 'El mejor server de Maincra :)'
+  TYPE = 'FORGE'
+  MODS_FILE = '/extras/mods.txt'
 
 [[mounts]]
   source = 'minecraft'
