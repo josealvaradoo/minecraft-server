@@ -1,5 +1,8 @@
+.DS_Store
+
 # Volume dir
 /data
+server.tar.gz
 
 # Environment Vars
 .env
